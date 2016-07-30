@@ -1,0 +1,33 @@
+<html ng-app="myApp">
+<head>
+    <title>Angular Examples</title>
+</head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>          
+<script src="app.js"></script>
+    <!--include angular -->
+    <body>
+    <div>
+        
+        <a href="#123">123</a> <!--to show has change event is traped in app.js -->
+    <!--show the text box value in p tag -->    
+    <div>
+ 	  <p>Name: <input type="text" ng-model="name"></p>
+ 	  <p ng-bind="name"></p>
+        <h1 reply="hello">hello</h1>
+    </div> 
+        
+        <h1>Header of page View in app.js</h1>
+        
+        <!--working for single page application-->
+        <a href="#/">first</a>
+        <a href="#/second">second</a>
+    </div>
+        
+        <!--this part will only change for SPA-->
+        <div ng-view></div>
+        <script src="log.js"></script>
+
+    </body>
+</html>
